@@ -1,9 +1,9 @@
 import React from 'react'
 
-const VideotoText = () => {
+const VideoToText = () => {
   return (
-    <div>VideotoText</div>
+    <div>VideoToText</div>
   )
 }
 
-export default VideotoText
+export default VideoToText
