@@ -1,16 +1,16 @@
 import React from 'react'
 
-const FeatureCard = (props) => {
-  return (
-    <div className='flex justify-between my-16'>
-      <div className='w-3/5'>
-        {props.text}
-      </div>
-      <div className='bg-gray-800 text-white w-1/5 flex justify-center items-center'>
-        {props.cardTxt}
-      </div>
+const FeatureCard = (props) => (
+  <div className="featureCard flex">
+    <div className="featureCard-content">
+      <h3 className='featureCard-title'>{props.title}</h3>
+      <p className='featureCard-desc'>{props.desc}</p>
+      <a className="featureCard-button" href={props.path}>{props.link}</a>
     </div>
-  )
-}
+    <div className="featureCard-image">
+      <img src={props.image} alt="image" />
+    </div>
+  </div>
+)
 
 export default FeatureCard

@@ -1,10 +1,7 @@
 import React from 'react'
-import "../style.css"
-
+import '../style.css'
 import { ASLInfoSection, EmergencySection, Features, FeedbackSection, HeroSection, MembersSection } from '../containers/index'
 import { Footer } from '../components/index'
-
-
 
 const Landingpage = () => (
   <div>
