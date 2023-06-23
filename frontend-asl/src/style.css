@@ -1,10 +1,6 @@
-.land-frontpage{
-    height: 100vh;
+.hero_section{
     background-image: url('./assets/BgLandingPage.png');
-    background-size: cover;
-}
-.landfrontIn{
-    background: rgba(128, 128, 128, 0.678);
-    height: 100vh;
-    color: black;
+    background-size:cover;
+    background-repeat: no-repeat;
+
 }
