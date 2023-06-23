@@ -2,5 +2,8 @@
     background-image: url('./assets/BgLandingPage.png');
     background-size:cover;
     background-repeat: no-repeat;
-
+}
+.hero_section-content{
+    height: 100vh;
+    background-color: rgba(128, 128, 128, 0.595);
 }

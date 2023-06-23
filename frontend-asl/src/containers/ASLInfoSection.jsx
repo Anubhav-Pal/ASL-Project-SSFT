@@ -4,7 +4,7 @@ import { HiBadgeCheck } from "react-icons/hi"
 const ASLInfoSection = () => {
   return (
     <div>
-    <div className=" bg-gray-800 h-fit text-2xl text-white p-16 px-28">
+    <div className=" bg-black h-fit text-2xl text-white p-16 px-28">
       <div className='text-6xl text-center my-4'>ASL Information</div>
       <div className='my-6'>ASL stands for American Sign Language. It is a natural language used primarily by deaf and hard-of-hearing individuals in the United States and parts of Canada. </div>
       <div className='my-8'>
