@@ -1,12 +1,14 @@
 import React from 'react'
 // import '../style.css'
-import { ASLInfoSection, EmergencySection, Features, FeedbackSection, HeroSection, MembersSection } from '../containers/index'
+import { Emoticons, ASLInfoSection, EmergencySection, Features, FeedbackSection, HeroSection, MembersSection } from '../containers/index'
+import AppWrap from '../wrapper/AppWrap'
 import { Footer } from '../components/index'
 
 const Landingpage = () => (
   <div>
     <HeroSection />
     <ASLInfoSection />
+    <Emoticons />
     <Features />
     <EmergencySection />
     <FeedbackSection />
@@ -17,4 +19,4 @@ const Landingpage = () => (
 
 )
 
-export default Landingpage
+export default AppWrap(Landingpage)

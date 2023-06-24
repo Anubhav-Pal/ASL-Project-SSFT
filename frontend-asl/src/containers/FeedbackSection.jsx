@@ -9,7 +9,7 @@ const FeedbackSection = () => {
     <div className='w-3/5 text-offwhite'>Everything you need to aceept card payments and grow your business anywhere on the planet.</div>
     </div>
     <div className='flex items-center'>
-    <button className='bg-primary py-3 px-8 rounded-lg font-semibold'>Get started</button>
+    <button className='bg-primary  py-3 px-8 rounded-lg font-semibold'>Get started</button>
     </div>
       </div>
     </div>

@@ -4,6 +4,8 @@
 
 html,
 body {
+  overflow-x: hidden;
+  height: 100%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -76,5 +78,17 @@ a {
 .main_info_container{
   background-image: url(./assets/infoBG.png);
   background-color: #1B5E8F;
-  /* height: 100vh; */
+}
+
+
+.wrapper_line{
+  position: relative;
+}
+
+.wrapper_line::after{
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 500vh;
+  background-color: black;
 }
