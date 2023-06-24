@@ -8,7 +8,7 @@ const Landingpage = () => (
     <HeroSection />
     <ASLInfoSection />
     <Features />
-    <EmergencySection />
+    {/* <EmergencySection /> */}
     <FeedbackSection />
     <MembersSection />
     <Footer />

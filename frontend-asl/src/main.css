@@ -14,9 +14,49 @@ a {
   color: black;
 }
 
+/* Utility Classes */
 .container {
   max-width: 1180px;
   margin-inline: auto;
   padding: var(--padding-inline-section);
   overflow: hidden;
 }
+
+.gradient-primary{
+    background-image: linear-gradient(to right, #248DDA, #06A6FF);
+    background-image: radial-gradient(
+      64.18% 64.18% at 71.16% 35.69%,
+      #a0c8ff 0.89%,
+      #82b6ff 17.23%,
+      #6eaafe 42.04%,
+      #549bff 55.12%,
+      #44a7ef 71.54%,
+      #2697e8 100%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+
+  .Link-animate{
+      position: relative;
+  }
+
+  .Link-animate::after {
+    border-radius: 12px;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .Link-animate:hover::after {
+    transform: scaleX(1);
+  }
+  
+  /* Hero Section */
