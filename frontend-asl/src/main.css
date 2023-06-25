@@ -30,7 +30,7 @@ a {
       #a0c8ff 0.89%,
       #82b6ff 17.23%,
       #6eaafe 42.04%,
-      #549bff 55.12%,
+      #5fa1ff 55.12%,
       #44a7ef 71.54%,
       #2697e8 100%);
   -webkit-background-clip: text;
@@ -59,15 +59,30 @@ a {
   transform: scaleX(1);
 }
 
+
+/* Wrapper Container */
+.wrapper_line {
+  position: relative;
+}
+
+.wrapper_line::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  opacity: 20%;
+  height: 500vh;
+  background-color: rgb(219, 219, 219);
+}
+
 /* Hero Section */
 
 .hero_section {
-  background-image: url('./assets/herosectionimage.png');
+  background-image: url('./assets/herosectionimage3.png');
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
   height: 100vh;
-  background-color: #a3a3a3;
+  background-color: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.1));
 }
 
 .hero_section-content {
@@ -75,20 +90,7 @@ a {
 }
 
 /* ASL Info Section */
-.main_info_container{
+.main_info_container {
   background-image: url(./assets/infoBG.png);
   background-color: #1B5E8F;
-}
-
-
-.wrapper_line{
-  position: relative;
-}
-
-.wrapper_line::after{
-  position: absolute;
-  content: "";
-  width: 1px;
-  height: 500vh;
-  background-color: black;
 }

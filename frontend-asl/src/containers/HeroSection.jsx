@@ -10,7 +10,7 @@ const HeroSection = () => {
           <Link className='text-white text-lg Link-animate' to='/videototext'>Video To Text</Link>
         </div>
 
-        <div className="nav-headLine flex flex-col items-center justify-center text-center h-3/5 text-8xl font-bold">
+        <div className="z-20 nav-headLine flex flex-col items-center justify-center text-center h-3/5 text-8xl font-bold">
           Transform ideas into <span className="gradient-primary inline">ASL</span>effortlessly
         </div>
 
