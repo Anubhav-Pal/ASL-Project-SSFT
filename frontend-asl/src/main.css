@@ -74,6 +74,22 @@ a {
   background-color: rgb(219, 219, 219);
 }
 
+
+/* Navbar */
+.navbar {
+  color: #434343;
+}
+
+.nav-icon {
+  width: 20px;
+  opacity: 80%;
+  cursor: pointer;
+}
+
+.nav-icon:hover {
+  opacity: 100%;
+}
+
 /* Hero Section */
 
 .hero_section {
