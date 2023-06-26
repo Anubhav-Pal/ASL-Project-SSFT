@@ -4,6 +4,8 @@ import Point_up from  './Point_up.png'
 import ILY from  './I_Love_You.png'
 import Heart from  './Heart.png'
 import Grid from  './gridNavbar.png'
+import heartLeft from  './heart-left.png'
+import heartright from  './heart-right.png'
 
 export{
     Ok,
@@ -11,5 +13,7 @@ export{
     Point_up,
     ILY,
     Heart,
-    Grid
+    Grid,
+    heartLeft,
+    heartright
 }
