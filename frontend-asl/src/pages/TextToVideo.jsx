@@ -18,9 +18,6 @@ const TextToVideo = () => (
         <button type="submit" className='bg-primary text-white px-2 py-2 font-normal w-[8rem] rounded-md mb-5 nav-box transition-all ease-in-out duration-200 hover:bg-[#1e78b9]'>Convert</button>
       </form>
     </div>
-
-    
-
   </section>
 ) 
 
