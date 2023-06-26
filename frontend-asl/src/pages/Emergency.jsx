@@ -1,9 +1,11 @@
 import React from 'react'
+import { Navbar } from '../components/index'
 
-const Emergency = () => {
-  return (
-    <div>Emergency</div>
+const Emergency = () => (
+  <section>
+    <Navbar/>
+  </section>
   )
-}
+
 
 export default Emergency
