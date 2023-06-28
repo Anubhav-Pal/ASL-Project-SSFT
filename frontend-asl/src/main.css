@@ -69,8 +69,8 @@ a {
   position: absolute;
   content: "";
   width: 1px;
-  opacity: 20%;
-  height: 500vh;
+  opacity: 10%;
+  height: 650.5vh;
   background-color: rgb(219, 219, 219);
 }
 
@@ -116,3 +116,7 @@ a {
   background-color: #1B5E8F;
 }
 
+/* Footer */
+.footer-section{
+  background: linear-gradient(to bottom, #248DDA, #1a69a2);
+}

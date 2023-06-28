@@ -13,7 +13,6 @@ const Landingpage = () => (
     <BackGroundContainer />
     <EmergencySection />
     <FeedbackSection />
-    <MembersSection />
     <Footer />
   </div>
 
