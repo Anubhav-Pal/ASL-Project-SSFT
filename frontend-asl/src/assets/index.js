@@ -6,6 +6,8 @@ import Heart from  './Heart.png'
 import Grid from  './gridNavbar.png'
 import heartLeft from  './heart-left.png'
 import heartright from  './heart-right.png'
+import handsMajor from  './handsMajor.jpg'
+import pcGroup from  './pcGroup.png'
 
 export{
     Ok,
@@ -15,5 +17,7 @@ export{
     Heart,
     Grid,
     heartLeft,
-    heartright
+    heartright,
+    handsMajor,
+    pcGroup
 }

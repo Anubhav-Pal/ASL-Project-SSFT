@@ -43,7 +43,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="line text-white font-semibold mx-32 border-offwhite rounded-sm border-2"></div>
+      <hr className='opacity-50' />
       <div className="footer flex justify-between h-12 items-center mx-40">
 
         <div className="copyright flex">

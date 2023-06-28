@@ -1,7 +1,7 @@
 import React from 'react'
-import { Emoticons, ASLInfoSection, EmergencySection, Features, FeedbackSection, HeroSection, MembersSection } from '../containers/index'
+import { BackGroundContainer, Emoticons, ASLInfoSection, EmergencySection, Features, FeedbackSection, HeroSection, MembersSection, BackgroundSection } from '../containers/index.js'
 import AppWrap from '../wrapper/AppWrap'
-import { Footer} from '../components/index'
+import { Footer } from '../components/index'
 
 const Landingpage = () => (
   <div>
@@ -9,6 +9,8 @@ const Landingpage = () => (
     <ASLInfoSection />
     <Emoticons />
     <Features />
+    <BackgroundSection />
+    <BackGroundContainer />
     <EmergencySection />
     <FeedbackSection />
     <MembersSection />
