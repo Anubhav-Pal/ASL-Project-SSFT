@@ -8,6 +8,9 @@ import heartLeft from  './heart-left.png'
 import heartright from  './heart-right.png'
 import handsMajor from  './handsMajor.jpg'
 import pcGroup from  './pcGroup.png'
+import texttovideo from './texttovideo.png'
+import videototext from './videototext.png'
+import livevideototext from './livevideototext.png'
 
 export{
     Ok,
@@ -19,5 +22,8 @@ export{
     heartLeft,
     heartright,
     handsMajor,
-    pcGroup
+    pcGroup,
+    livevideototext,
+    videototext,
+    texttovideo,
 }

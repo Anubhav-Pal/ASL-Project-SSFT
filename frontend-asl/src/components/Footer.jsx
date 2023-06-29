@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
   const year = new Date().getFullYear();
   return (
-    <section className='footer-section bg-primary text-white flex flex-col items gap-10 pt-20 '>
-      <div className='container flex flex-col gap-10 lg:gap-0 text-center md:text-left md:px-5 lg:text-left md:flex-row md:items-start lg:flex-row items-center lg:items-start justify-between '>
+    <section className='footer-section bg-primary text-white flex flex-col  gap-10 pt-20 '>
+      <div className='container flex flex-col gap-10 lg:gap-0 text-center md:text-left md:px-5 lg:px-0 lg:text-left md:flex-row md:items-start lg:flex-row items-center lg:items-start justify-between '>
         <div>
           <div className='text-4xl lg:text-3xl font-semibold mb-2'>ASLife.</div>
           <div>Transform ideas into ASL effortlessly</div>
