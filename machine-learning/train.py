@@ -66,4 +66,20 @@ for action in actions:
             window.append(res)
         sequences.append(window)
         labels.append(label_map[action])
-print(np.array(labels).shape)
+X=np.array(sequences)
+Y=to_categorical(labels).astype(int)
+X_train,X_test,Y_train,Y_test=train_test_split(X,Y,test_size=0.05)
+from keras.models import Sequential
+from keras.layers import LSTM,Dense
+from keras.callbacks import TensorBoard
+log_dir = os.path.join('Logs')
+tb_callback = TensorBoard(log_dir=log_dir)
+model = Sequential()
+model.add(LSTM(64, return_sequences=True, activation='relu', input_shape=(30,1662)))
+model.add(LSTM(128, return_sequences=True, activation='relu'))
+model.add(LSTM(64, return_sequences=False, activation='relu'))
+model.add(Dense(64, activation='relu'))
+model.add(Dense(32, activation='relu'))
+model.add(Dense(actions.shape[0], activation='softmax'))
+model.compile(optimizer='Adam',loss='categorical_crossentropy',metrics=['categorical_accuracy'])
+model.fit(X_train, Y_train, epochs=2000, callbacks=[tb_callback])
