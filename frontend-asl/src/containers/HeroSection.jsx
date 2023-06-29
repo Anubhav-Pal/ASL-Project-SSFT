@@ -14,7 +14,7 @@ const HeroSection = () => {
           Transform ideas into <span className="gradient-primary inline">ASL</span>effortlessly
         </div>
 
-        <div className="nav-links-two flex items-center justify-between h-1/5 ">
+        <div className="nav-links-two flex items-center justify-between h-1/5">
           <Link className='text-white text-lg Link-animate' to='/livevideototext'>Live Video Captioning</Link>
           <Link className='text-white text-lg Link-animate' to='/emergency'>Emergency Call</Link>
         </div>

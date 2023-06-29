@@ -5,7 +5,7 @@ const Footer = () => {
   const year = new Date().getFullYear();
   return (
     <section className='footer-section bg-primary text-white flex flex-col items gap-10 '>
-      <div className='container flex flex-row items-start justify-between'>
+      <div className='container flex flex-row items-start justify-between '>
         <div>
           <div className='text-3xl font-semibold mb-2'>ASLife.</div>
           <div>Transform ideas into ASL effortlessly</div>
@@ -38,4 +38,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default Footer 
