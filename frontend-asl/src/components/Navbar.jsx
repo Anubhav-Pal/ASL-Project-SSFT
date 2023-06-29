@@ -8,7 +8,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <section className='navbar'>
+    <section className='navbar px-5 lg:px-0'>
       <div className="navbar-content container h-16 flex flex-row items-center justify-between">
         <Link className='nav-link text-xl font-medium opacity-80' to='/'>ASLife.</Link>
         <div className='flex flex-row gap-5 items-center justify-center '>
@@ -23,7 +23,7 @@ const Navbar = () => {
               className=' w-[20px] h-[20px] object-contain opacity-80 hover:opacity-100 cursor-pointer'
               onMouseEnter={() => setToggle(true)}
             />
-            <div className={`${toggle ? 'flex' : 'hidden'} nav-box absolute top-14 bg-white rounded-md z-20 flex-col items-start justify-center`}>
+            <div className={`${toggle ? 'flex' : 'hidden'}  absolute top-14 bg-white rounded-md z-20 flex-col items-start justify-center`}>
               {featureInfo.map((feature) => (
                 <Link className='text-[#434343] opacity-80 text-sm hover:text-white hover:bg-primary w-full p-2 transition-all duration-200 ease-in-out even:rounded-none odd:rounded-t-md' to={feature.path}>
                   {feature.title}
