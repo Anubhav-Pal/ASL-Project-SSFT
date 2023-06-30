@@ -83,3 +83,5 @@ model.add(Dense(32, activation='relu'))
 model.add(Dense(actions.shape[0], activation='softmax'))
 model.compile(optimizer='Adam',loss='categorical_crossentropy',metrics=['categorical_accuracy'])
 model.fit(X_train, Y_train, epochs=2000, callbacks=[tb_callback])
+res=model.predict(X_test)
+actions[np.argmax(res[0])]
