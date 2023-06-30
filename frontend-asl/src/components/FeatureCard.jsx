@@ -1,8 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
 
 const FeatureCard = (props) => (
-  <div className="featureCard flex flex-col lg:flex-row even:gap-52 lg:even:gap-0 md:even:gap-40 md:flex-row lg:even:flex-row-reverse p-10  lg:justify-between gap-40 lg:gap-10  lg:p-20 text-white">
+  <motion.div
+    className="featureCard flex flex-col lg:flex-row even:gap-52 lg:even:gap-0 md:even:gap-40 md:flex-row lg:even:flex-row-reverse p-10  lg:justify-between gap-40 lg:gap-10  lg:p-20 text-white"
+    whileInView={{ y: [  100, 50, 0], opacity: [0, 0, 1] }}
+    transition={{ duration: 1 }}  
+      >
     <div className="featureCard-content relative flex flex-col w-3/4  lg:w-1/2">
       <div className=' text-7xl lg:text-9xl font-bold opacity-10'>{props.index}</div>
       <div className='absolute top-6 left-5  lg:top-16 lg:left-10 flex flex-col w-[300px] lg:w-full'>
@@ -15,7 +20,7 @@ const FeatureCard = (props) => (
     <div className="featureCard-image mt-10 lg:w-1/2">
       <img src={props.image} className='w-[900px] mt-5 object-cover' alt="image" />
     </div>
-  </div>
+  </motion.div >
 )
 
 export default FeatureCard
