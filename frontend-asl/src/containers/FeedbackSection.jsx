@@ -1,19 +1,21 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-const FeedbackSection = () => {
-  return (
-    <div className='feedback bg-primary py-20'>
-      <div className='bg-black m-auto px-32 py-12 rounded-xl w-4/5 flex justify-between'>
-    <div className='text-white'>
-    <div className='text-4xl mb-4 font-semibold'>Let's try our service now !</div>
-    <div className='w-3/5 text-offwhite'>Everything you need to aceept card payments and grow your business anywhere on the planet.</div>
-    </div>
-    <div className='flex items-center'>
-    <button className='bg-primary  py-3 px-8 rounded-lg font-semibold'>Get started</button>
-    </div>
+const FeedbackSection = () => (
+  <section className='bg-primary text-white pt-10 px-5 lg:pt-20'>
+    <div className="container rounded-lg text-center lg:text-left  p-10">
+      <div className='feedback-main-content p-5 lg:py-10 lg:px-10 flex flex-col lg:flex-row gap-10 lg:gap-0  items-center justify-around bg-black'>
+        <div className="feedback-headers lg:w-3/4 flex flex-col items-center justify-center lg:items-start ">
+          <div className='text-3xl font-semibold'>Help Us Serve You Better</div>
+          <div className='p-text  lg:w-3/4 mt-3'>We greatly value your feedback! It plays a vital role in our ongoing efforts to enhance our services. Whether you have suggestions, compliments, or areas where we can improve, we want to hear from you.</div>
+        </div>
+        <div className='feedback-CTA w-full md:w-[250px] lg:w-[200px] px-5 py-3  text-white  rounded-md bg-primary nav-box text-center '>
+          <Link className='text-white' to='/feedback'>Share Feedback</Link>
+        </div>
       </div>
     </div>
-  )
-}
+  </section>
+
+)
 
 export default FeedbackSection
